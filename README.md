@@ -1,7 +1,7 @@
 # Neo-EEGLAB Wrapper Toolbox (_NEWT_)
 This is a wrapper-toolbox over the [EEGLAB](https://sccn.ucsd.edu/eeglab/download.php)'s functions and gives codes for the basic functionality of importing, cleaning (filtering), channel-based ICA and artefact-rejection (using Multiple Artefact Rejection Algorithm, a.k.a. [MARA](https://irenne.github.io/artifacts/)).
 
-_Note: This is an on-goig project and the functions are updated every once in a while._
+_Note: This repository is a work-in-progress and the functions are updated every once in a while._
 
 ## Initializing the Toolbox
 Make sure that EEGLAB is already downloaded on your system, and the [path to the toolbox is specified](https://www.mathworks.com/help/matlab/matlab_env/add-remove-or-reorder-folders-on-the-search-path.html).
@@ -14,7 +14,6 @@ addpath('\Your\...\path\...\to\...\neo_eeglab_wrapper_toolbox');  % initialize N
 
 ## Using the functions in the Toolbox:
 Detailed usage of each function can be found using the `help` command in MATLAB command-line.
-
 <!-- However, an example script is for processing a set of multiple-channel EEG data is provided here:
 
 ```Matlab
@@ -42,9 +41,9 @@ eeg_data = EEG.data;
 eeglab redraw;
 ``` -->
 
-# Licenses
-This repository licensed under the terms of the [MIT license](https://github.com/sparky-electrode/newt/blob/master/LICENSE).
-
 # References
 1. EEGLAB toolbox for neuro-electrophysiological signal-processing, Swartz Center for Computational Neuroscience (University of California San Diego), found at: https://sccn.ucsd.edu/eeglab/index.php.
 2. Multiple Artefact Rejection Algorithm (MARA), EEGLAB Plug-In, found at: https://irenne.github.io/artifacts/
+
+# Licenses
+This repository licensed under the terms of the [MIT license](https://github.com/sparky-electrode/newt/blob/master/LICENSE).
