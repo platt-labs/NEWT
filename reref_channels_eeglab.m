@@ -1,6 +1,6 @@
 function [ALLEEG, EEG, CURRENTSET] = reref_channels_eeglab( ALLEEG, EEG,...
     CURRENTSET, old_ref, new_ref, dataset_name, keep_old_ref )
-%   This function is an envelope over the EEGLAB function 'pop_reref'. As
+%   This function is an wrapper over the EEGLAB function 'pop_reref'. As
 % of now, this function supports a choice between the use of a single
 % channel as a new reference and the average across all electrodes.
 %

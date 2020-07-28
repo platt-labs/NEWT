@@ -1,7 +1,7 @@
 function [ALLEEG, EEG, CURRENTSET, b] = filter_data_eeglab(...
     ALLEEG, EEG, CURRENTSET, lower_cutoff, upper_cutoff, dataset_name)
 %   This function requires EEGLAB to be running with data already imported
-% and the structure 'EEG' to contain a non-empty variable 'data'.
+%  to it. This function is a wrapper on the basic FIR filter in EEGLAB.
 % 
 % 	Usage:
 %       [ALLEEG, EEG, CURRENTSET] = filter_data_eeglab(ALLEEG, EEG, CURRENTSET, lower_cutoff, upper_cutoff)
