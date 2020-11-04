@@ -1,5 +1,5 @@
 # Neo-EEGLAB Wrapper Toolbox (_NEWT_)
-This is a wrapper-toolbox over the [EEGLAB](https://sccn.ucsd.edu/eeglab/download.php)'s functions and gives codes for the basic functionality of importing, cleaning (filtering), channel-based ICA and artefact-rejection (using Multiple Artefact Rejection Algorithm, a.k.a. [MARA](https://irenne.github.io/artifacts/)).
+This is a library of wrappers over the [EEGLAB](https://sccn.ucsd.edu/eeglab/download.php)'s functions. This library includes wrappers over the basic functionalities of importing, cleaning (filtering), channel-based ICA, and artefact-rejection (using Multiple Artefact Rejection Algorithm, a.k.a. [MARA](https://irenne.github.io/artifacts/)).
 
 _Note: This repository is a work-in-progress and the functions are updated every once in a while._
 
@@ -14,6 +14,15 @@ addpath('\Your\...\path\...\to\...\neo_eeglab_wrapper_toolbox');  % initialize N
 
 ## Using the functions in the Toolbox:
 Detailed usage of each function can be found using the `help` command in MATLAB command-line.
+
+| Functionality | Wrapper Functions |
+| --- | --- |
+| Import EEG Data | [import_data_eeglab](./import_data_eeglab.m) |
+| Rereferencing Channels | [reref_channels_eeglab](./reref_channels_eeglab.m) |
+| Filter Dataset | 1. [filter_data_eeglab](./filter_data_eeglab.m)<newline>2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
+| Retrieving a Dataset | [retr_data_eeglab](./retr_data_eeglab.m) |
+| Artefact Rejection | [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) |
+
 <!-- However, an example script is for processing a set of multiple-channel EEG data is provided here:
 
 ```Matlab
