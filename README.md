@@ -17,38 +17,21 @@ Detailed usage of each function can be found using the `help` command in MATLAB 
 
 | Functionality | Wrapper Functions |
 | --- | --- |
-| Import EEG Data | [import_data_eeglab](./import_data_eeglab.m) |
-| Rereferencing Channels | [reref_channels_eeglab](./reref_channels_eeglab.m) |
-| Filter Dataset | [filter_data_eeglab](./filter_data_eeglab.m)<br>[apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
-| Retrieving a Dataset | [retr_data_eeglab](./retr_data_eeglab.m) |
-| Artefact Rejection | [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) |
+| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) |
+| Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) |
+| Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
+| Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |
+| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) |
 
-<!-- However, an example script is for processing a set of multiple-channel EEG data is provided here:
-
-```Matlab
-% Import Data using Array [ check: help import_data_eeglab ]
-[ALLEEG, EEG, CURRENTSET, ALLCOM] = import_data_eeglab('eeg_raw_data', fs, 'path\to\eeg_channel_locations.ced', 'raw');
-
-% Filter Data [ check: help filter_data_eeglab ]
-[ALLEEG, EEG, CURRENTSET] = filter_data_eeglab(ALLEEG, EEG, CURRENTSET, 1, 50, 'raw_filtered');
-
-% Multiple Filters [ check: help apply_multifilt_eeglab ]
-[ALLEEG, EEG, CURRENTSET, b] = apply_multifilt_eeglab(ALLEEG, EEG, CURRENTSET, [1,4,7.5,12,30], {'delta','theta','alpha','beta'}, 1);
-
-% Retrieve Data [ check: help retr_data_eeglab ]
-[ALLEEG, EEG, CURRENTSET] = retr_data_eeglab(ALLEEG, EEG, CURRENTSET, 2);
-
-eeg_data = EEG.data;
-
-% Remove Artefacts [ check: help reject_artefacts_eeglab ]
-[ALLEEG, EEG, CURRENTSET, ALLCOM, MARA_info] = reject_artefacts_eeglab(ALLEEG, EEG, CURRENTSET, 'eeg_data', fs, 'eeg_clean_data', 'path\to\eeg_channel_locations.ced');
-
-% Post-artefact removal Filtering
-[ALLEEG, EEG, CURRENTSET] = filter_data_eeglab(ALLEEG, EEG, CURRENTSET, 1, 50, 'eeg_clean_data_filtered');
-
-% Reflect Code on EEGLAB via GUI (actual EEGLAB function)
-eeglab redraw;
-``` -->
+<!-- -->
+| Functionality | Wrapper Functions | Comments |
+| --- | --- | --- |
+| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) | currently only allows for matlab arrays and EDF files to be imported. |
+| Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) | Rereferencing to a common mode or differential mode is not coded and needs to be done manually. |
+| Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) | Single filter function.<br>Multiple filters stored as multiple datasets. |
+| Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |  |
+| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both. For Individually training the parameters using the IC's, try manual rejection. |
+<!-- -->
 
 # References
 1. EEGLAB toolbox for neuro-electrophysiological signal-processing, Swartz Center for Computational Neuroscience (University of California San Diego), found at: https://sccn.ucsd.edu/eeglab/index.php.
