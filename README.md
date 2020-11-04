@@ -15,23 +15,21 @@ addpath('\Your\...\path\...\to\...\neo_eeglab_wrapper_toolbox');  % initialize N
 ## Using the functions in the Toolbox:
 Detailed usage of each function can be found using the `help` command in MATLAB command-line.
 
-| Functionality | Wrapper Functions |
+<!-- | Functionality | Wrapper Functions |
 | --- | --- |
 | Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) |
 | Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) |
 | Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
 | Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |
-| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) |
+| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | -->
 
-<!-- -->
 | Functionality | Wrapper Functions | Comments |
 | --- | --- | --- |
-| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) | currently only allows for matlab arrays and EDF files to be imported. |
-| Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) | Rereferencing to a common mode or differential mode is not coded and needs to be done manually. |
+| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) | currently only imports matlab arrays and EDF files. |
+| Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) | Rereferencing to a common or differential is not<br>coded and needs to be done manually. |
 | Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) | Single filter function.<br>Multiple filters stored as multiple datasets. |
 | Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |  |
-| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both. For Individually training the parameters using the IC's, try manual rejection. |
-<!-- -->
+| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both - for independent ICA rejection,<br>manually run ICA. |
 
 # References
 1. EEGLAB toolbox for neuro-electrophysiological signal-processing, Swartz Center for Computational Neuroscience (University of California San Diego), found at: https://sccn.ucsd.edu/eeglab/index.php.
