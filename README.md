@@ -19,7 +19,7 @@ Detailed usage of each function can be found using the `help` command in MATLAB 
 | --- | --- |
 | Import EEG Data | [import_data_eeglab](./import_data_eeglab.m) |
 | Rereferencing Channels | [reref_channels_eeglab](./reref_channels_eeglab.m) |
-| Filter Dataset | [filter_data_eeglab](./filter_data_eeglab.m), [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
+| Filter Dataset | [filter_data_eeglab](./filter_data_eeglab.m)<br>[apply_multifilt_eeglab](./apply_multifilt_eeglab.m) |
 | Retrieving a Dataset | [retr_data_eeglab](./retr_data_eeglab.m) |
 | Artefact Rejection | [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) |
 
