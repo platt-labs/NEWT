@@ -29,7 +29,7 @@ Detailed usage of each function can be found using the `help` command in MATLAB 
 | Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) | Rereferencing to a common or differential is not<br>coded and needs to be done manually. |
 | Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) | Single filter function.<br>Multiple filters stored as multiple datasets. |
 | Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |  |
-| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both - for independent ICA rejection,<br>manually run ICA. |
+| Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both - for independent ICA<br>rejection, manually run ICA. |
 
 # References
 1. EEGLAB toolbox for neuro-electrophysiological signal-processing, Swartz Center for Computational Neuroscience (University of California San Diego), found at: https://sccn.ucsd.edu/eeglab/index.php.
