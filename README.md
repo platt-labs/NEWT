@@ -25,10 +25,10 @@ Detailed usage of each function can be found using the `help` command in MATLAB 
 
 | Functionality | Wrapper Functions | Comments |
 | --- | --- | --- |
-| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) | currently only imports matlab arrays and EDF files. |
+| Import EEG Data | 1.1. [import_data_eeglab](./import_data_eeglab.m) | Currently only imports matlab arrays and EDF files. |
 | Rereferencing Channels | 2.1. [reref_channels_eeglab](./reref_channels_eeglab.m) | Rereferencing to a common or differential is not<br>coded and needs to be done manually. |
 | Filter Dataset | 3.1. [filter_data_eeglab](./filter_data_eeglab.m)<br>3.2. [apply_multifilt_eeglab](./apply_multifilt_eeglab.m) | Single filter function.<br>Multiple filters stored as multiple datasets. |
-| Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) |  |
+| Retrieving a Dataset | 4.1. [retr_data_eeglab](./retr_data_eeglab.m) | - |
 | Artefact Rejection | 5.1. [reject_artefacts_eeglab](./reject_artefacts_eeglab.m) | Runs ICA and MARA both - for independent ICA<br>rejection, manually run ICA. |
 
 # References
